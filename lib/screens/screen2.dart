@@ -13,19 +13,19 @@ class Screen2 extends StatelessWidget {
             Container(
               child: Text(
                 'Screen 2',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               margin: EdgeInsets.all(16),
             ),
-            FlatButton(
+            TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Go back'),
-              color: Colors.white,
+              child: Text(
+                'Go back',
+                style: TextStyle(color: Colors.white),
+              ),
+              // color: Colors.white,
             ),
           ],
         ),

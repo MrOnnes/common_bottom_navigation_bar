@@ -13,21 +13,20 @@ class HomePage extends StatelessWidget {
           Container(
             child: Text(
               'Screen 1',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20
-              ),
+              style: TextStyle(color: Colors.white, fontSize: 20),
             ),
             margin: EdgeInsets.all(16),
           ),
-          FlatButton(
+          TextButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) => Screen2()
-              ));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Screen2()));
             },
-            child: Text('Go to next screen'),
-            color: Colors.white,
+            child: Text(
+              'Go to next screen',
+              style: TextStyle(color: Colors.white),
+            ),
+            // color: Colors.white,
           ),
         ],
       ),

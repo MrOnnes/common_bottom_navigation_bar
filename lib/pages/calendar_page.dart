@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../screens/screen2.dart';
 
 class CalendarPage extends StatelessWidget {
-
   final Function onNext;
 
   CalendarPage({this.onNext});
@@ -13,15 +12,18 @@ class CalendarPage extends StatelessWidget {
     return Container(
       color: Colors.red,
       child: Center(
-        child: FlatButton(
+        child: TextButton(
           onPressed: onNext,
 //          onPressed: (){
 //            Navigator.push(context, MaterialPageRoute(
 //                builder: (context) => Screen2()
 //            ));
 //          },
-          child: Text('Go to next screen'),
-          color: Colors.white,
+          child: Text(
+            'Go to next screen',
+            style: TextStyle(color: Colors.white),
+          ),
+          // color: Colors.white,
         ),
       ),
     );

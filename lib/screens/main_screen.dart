@@ -1,6 +1,6 @@
-import 'package:common_bottom_navigation_bar/components/common_navigation_bar.dart';
+// import 'package:common_bottom_navigation_bar/components/common_navigation_bar.dart';
 import 'package:common_bottom_navigation_bar/screens/screen2.dart';
-import 'package:common_bottom_navigation_bar/components/bottom_bar_navigator.dart';
+// import 'package:common_bottom_navigation_bar/components/bottom_bar_navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -30,7 +30,6 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     return WillPopScope(
       onWillPop: () async {
         final isFirstRouteInCurrentTab =
@@ -54,7 +53,8 @@ class _MainScreenState extends State<MainScreen> {
                 Feather.home,
                 color: kGoodLightGray,
               ),
-              title: Text('HOME'),
+              // title: Text('HOME'),
+              label: 'Home',
               activeIcon: Icon(
                 Feather.home,
                 color: kGoodPurple,
@@ -65,7 +65,8 @@ class _MainScreenState extends State<MainScreen> {
                 FontAwesome.calendar,
                 color: kGoodLightGray,
               ),
-              title: Text('CALENDAR'),
+              // title: Text('CALENDAR'),
+              label: 'Calendar',
               activeIcon: Icon(
                 FontAwesome.calendar,
                 color: kGoodPurple,
@@ -77,7 +78,8 @@ class _MainScreenState extends State<MainScreen> {
                 color: kGoodLightGray,
                 size: 36,
               ),
-              title: Text('PROFILE'),
+              // title: Text('PROFILE'),
+              label: 'Profile',
               activeIcon: Icon(
                 EvilIcons.user,
                 color: kGoodPurple,
